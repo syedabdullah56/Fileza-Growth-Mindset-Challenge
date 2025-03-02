@@ -1,0 +1,44 @@
+App Name:
+Fileza
+
+Vision:
+To Make a Web App which is able for the interconversion of pdf,excel,ppt,word files
+
+Total use cases:
+=Number of file types*(Number of files types - 1)
+=4*3
+=12
+
+
+From → To	Use Case Count
+PDF → DOCX	1
+PDF → PPTX	1
+PDF → XLSX	1
+DOCX → PDF	1
+DOCX → PPTX	1
+DOCX → XLSX	1
+PPTX → PDF	1
+PPTX → DOCX	1
+PPTX → XLSX	1
+XLSX → PDF	1
+XLSX → DOCX	1
+XLSX → PPTX	1
+Total Use Cases	12
+
+Required Packages:
+pip install streamlit pdf2docx python-docx python-pptx PyMuPDF pandas openpyxl xlrd xlsxwriter comtypes pypandoc
+
+Purpose Of Each Package:
+streamlit:To built the web app with python and UI components
+pdf2docx: Convert pdf to docx
+python-docx: Read ,Edit and Create Word Files.Used for DOCX → PDF, DOCX → PPTX, DOCX → XLSX.
+python-pptx: Read, edit, and create PowerPoint (PPTX) files. Used for PPTX → DOCX, PPTX → PDF, PPTX → XLSX.
+PyMuPDF: Extract text and images from pdf files.Used for PDF → DOCX, PDF → PPTX, PDF → XLSX.
+pandas: Handle Excel Files and Data Frames Efficiently.
+openpyxl: Read and write Excel (XLSX) files. Used for XLSX → DOCX, XLSX → PPTX, XLSX → PDF.
+xlrd: Used for reading older excel files(XLS).
+xlsxwriter:	Write and format Excel (XLSX) files.
+comtypes: Required for DOCX → PDF, PPTX → PDF, XLSX → PDF using Microsoft Office automation (Windows only).
+pypandoc: Convert between various formats (e.g., DOCX ↔ PPTX, XLSX ↔ DOCX).
+
+
