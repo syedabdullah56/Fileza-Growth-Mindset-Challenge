@@ -11,7 +11,7 @@ import fitz  #For pdfs
 # Setting Up Our File Convertor App
 st.set_page_config(page_title="📁Fileza-Files Convertor",layout='wide')
 st.title("📁Fileza-Files Convertor")
-st.write("🌟🌟Convert Your Files Effortlessly For Free!🌟🌟")
+st.write("🌟🌟Convert Your Word Files To PDF Effortlessly For Free!🌟🌟")
 
 # Setting Logic for Our App
 
@@ -25,7 +25,7 @@ ppt_file="POWERPOINT FILE"
 
 
 #Selection box for input type of a file
-from_options=[word_file,pdf_file,excel_file,ppt_file]
+from_options=[word_file]
 from_file_option = st.selectbox(
     "😊Which type File📂 do you want to convert?",
     from_options,
@@ -34,12 +34,9 @@ from_file_option = st.selectbox(
 st.write("You selected:",from_file_option)
 
 #Selection box for output type of a file
-# Removing the previously selected element from an array
-from_options.remove(from_file_option)
-
-to_options=from_options
+to_options=[pdf_file]
 to_file_option= st.selectbox(
-    "😊Which type File📂 do you want to convert?",
+    "😊Which type of File📂 do you want to be converted ?",
     to_options,
 )
 
@@ -131,6 +128,8 @@ if uploaded_files:
                 pass
             if target_ext==".docx":
                 pass
+
+#I have made this app intentionally to support all the files but due to some reason I have only added word to pdf functionality in it other functionalities will be added in this soon
 
         
 
