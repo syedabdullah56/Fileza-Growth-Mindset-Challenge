@@ -2,11 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import io
-from pdf2docx import Converter
-from docx import Document
-from pptx import Presentation
 from fpdf import FPDF
-import fitz  #For pdfs
 
 # Setting Up Our File Convertor App
 st.set_page_config(page_title="📁Fileza-Files Convertor",layout='wide')
