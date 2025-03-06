@@ -1,5 +1,6 @@
 import streamlit as st
-import FPDF
+from fpdf import FPDF
+from docx import Document
 import os
 import io
 
